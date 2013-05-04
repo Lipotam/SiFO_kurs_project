@@ -4044,10 +4044,6 @@ applicable agreement for further details.
 	(pt 1016 368)
 )
 (connector
-	(pt 1016 368)
-	(pt 1016 656)
-)
-(connector
 	(pt 1016 656)
 	(pt 1016 800)
 )
@@ -4082,6 +4078,18 @@ applicable agreement for further details.
 (connector
 	(pt 408 280)
 	(pt 240 280)
+)
+(connector
+	(pt 1040 512)
+	(pt 1016 512)
+)
+(connector
+	(pt 1016 368)
+	(pt 1016 512)
+)
+(connector
+	(pt 1016 512)
+	(pt 1016 656)
 )
 (junction (pt 584 1040))
 (junction (pt 576 1072))
@@ -4188,3 +4196,4 @@ applicable agreement for further details.
 (junction (pt 1016 368))
 (junction (pt 1016 656))
 (junction (pt 568 1320))
+(junction (pt 1016 512))
