@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY ALU
+set_global_assignment -name TOP_LEVEL_ENTITY CommandEncoder
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:18:43  FEBRUARY 06, 2013"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -46,10 +46,6 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name FMAX_REQUIREMENT "50 MHz" -section_id CLK_kurs
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name HEX_FILE RamKurs.hex
 set_global_assignment -name HEX_FILE RomKurs.hex
 set_global_assignment -name QIP_FILE lpm_decode0.qip
@@ -57,27 +53,28 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Memblock.vwf
 set_global_assignment -name BDF_FILE registerSet.bdf
 set_global_assignment -name BDF_FILE Test.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf
+set_global_assignment -name BDF_FILE reg6.bdf
 set_global_assignment -name BDF_FILE reg8.bdf
 set_global_assignment -name BDF_FILE reg16.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE reg16.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE registerSet.vwf
 set_global_assignment -name BDF_FILE arbiter.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE arbiter.vwf
+set_global_assignment -name QIP_FILE Shift_Decode.qip
 set_global_assignment -name BDF_FILE Memblock.bdf
 set_global_assignment -name BDF_FILE ALU.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ALU.vwf
 set_global_assignment -name BDF_FILE MemUnit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MemUnit.vwf
 set_global_assignment -name BDF_FILE AddressEncoder.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE AddressEncoder.vwf
 set_global_assignment -name QIP_FILE lpm_counter0.qip
 set_global_assignment -name QIP_FILE lpm_decode1.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE MemUnit.vwf
 set_global_assignment -name BDF_FILE StackUnit.bdf
 set_global_assignment -name QIP_FILE Stack_counter.qip
 set_global_assignment -name QIP_FILE Stack_decode.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE StackUnit.vwf
 set_global_assignment -name BDF_FILE oneLeftShift.bdf
-set_global_assignment -name QIP_FILE Shift_Decode.qip
 set_global_assignment -name BDF_FILE ShiftLeft.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ShiftLeft.vwf
 set_global_assignment -name BDF_FILE NXor.bdf
@@ -85,5 +82,16 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Alu_NXor.vwf
 set_global_assignment -name BDF_FILE Alu_Or.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE alu_Or.vwf
 set_global_assignment -name QIP_FILE lpm_add_sub0.qip
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ALU.vwf
+set_global_assignment -name BDF_FILE DataGetBlock.bdf
+set_global_assignment -name QIP_FILE lpm_counter1.qip
+set_global_assignment -name BDF_FILE 6to8.bdf
+set_global_assignment -name QIP_FILE lpm_add_sub1.qip
+set_global_assignment -name BDF_FILE 6and8to14.bdf
+set_global_assignment -name BDF_FILE CommandEncoder.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name VECTOR_WAVEFORM_FILE CommandEncoder.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE CommandEncoder.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
