@@ -625,3 +625,4 @@ applicable agreement for further details.
 (junction (pt 1280 248))
 (junction (pt 1448 256))
 (text "static arbiter for 2 instanses" (rect 1120 56 1280 70)(font "Arial" (font_size 8)))
+(text "req0 has higher priority" (rect 1128 88 1260 102)(font "Arial" (font_size 8)))
