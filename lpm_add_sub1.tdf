@@ -56,7 +56,7 @@ BEGIN
 
 	result[7..0] = lpm_add_sub_component.result[7..0];
 	lpm_add_sub_component.dataa[7..0] = dataa[7..0];
-	lpm_add_sub_component.datab[7..0] = 1;
+	lpm_add_sub_component.datab[7..0] = 2;
 END;
 
 
@@ -67,7 +67,7 @@ END;
 -- Retrieval info: PRIVATE: CarryIn NUMERIC "0"
 -- Retrieval info: PRIVATE: CarryOut NUMERIC "0"
 -- Retrieval info: PRIVATE: ConstantA NUMERIC "0"
--- Retrieval info: PRIVATE: ConstantB NUMERIC "1"
+-- Retrieval info: PRIVATE: ConstantB NUMERIC "2"
 -- Retrieval info: PRIVATE: Function NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
@@ -92,7 +92,7 @@ END;
 -- Retrieval info: USED_PORT: result 0 0 8 0 OUTPUT NODEFVAL result[7..0]
 -- Retrieval info: CONNECT: result 0 0 8 0 @result 0 0 8 0
 -- Retrieval info: CONNECT: @dataa 0 0 8 0 dataa 0 0 8 0
--- Retrieval info: CONNECT: @datab 0 0 8 0 1 0 0 0 0
+-- Retrieval info: CONNECT: @datab 0 0 8 0 2 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_add_sub1.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_add_sub1.inc TRUE
