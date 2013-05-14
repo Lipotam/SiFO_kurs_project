@@ -182,22 +182,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1336 1584 1560 1600)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "CommandContainer[15..0]" (rect 90 0 219 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
 	(rect 2600 1560 2776 1576)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "MemAddr[13..0]" (rect 90 0 167 12)(font "Arial" ))
@@ -345,22 +329,6 @@ applicable agreement for further details.
 	(rect 2880 2144 3056 2160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "RamBusy" (rect 90 0 139 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
-	(rect 2304 1512 2480 1528)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ReadRequest" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -4660,16 +4628,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1336 1592)
-	(pt 1328 1592)
-	(bus)
-)
-(connector
-	(pt 1328 1592)
-	(pt 1328 1696)
-	(bus)
-)
-(connector
 	(pt 2664 1136)
 	(pt 2680 1136)
 	(bus)
@@ -5662,18 +5620,6 @@ applicable agreement for further details.
 	(pt 2376 952)
 )
 (connector
-	(pt 2304 1520)
-	(pt 2296 1520)
-)
-(connector
-	(pt 2296 1544)
-	(pt 2296 1520)
-)
-(connector
-	(pt 2296 1544)
-	(pt 2368 1544)
-)
-(connector
 	(text "tick6" (rect 2144 1560 2167 1572)(font "Arial" ))
 	(pt 2136 1576)
 	(pt 2184 1576)
@@ -6410,16 +6356,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1312 1696)
-	(pt 1328 1696)
-	(bus)
-)
-(connector
-	(pt 1328 1696)
-	(pt 1360 1696)
-	(bus)
-)
-(connector
 	(pt 2048 1760)
 	(pt 2224 1760)
 	(bus)
@@ -6663,10 +6599,6 @@ applicable agreement for further details.
 (connector
 	(pt 2368 1624)
 	(pt 2376 1624)
-)
-(connector
-	(pt 2368 1544)
-	(pt 2368 1624)
 )
 (connector
 	(pt 2368 1624)
@@ -6958,7 +6890,11 @@ applicable agreement for further details.
 	(pt 2576 368)
 	(pt 2712 368)
 )
-(junction (pt 1328 1696))
+(connector
+	(pt 1312 1696)
+	(pt 1360 1696)
+	(bus)
+)
 (junction (pt 2048 1760))
 (junction (pt 1608 1136))
 (junction (pt 1544 1864))
