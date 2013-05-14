@@ -810,10 +810,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 1048 -56 1296 48))
 )
 (connector
-	(pt 808 320)
-	(pt 808 328)
-)
-(connector
 	(pt 792 152)
 	(pt 824 152)
 	(bus)
