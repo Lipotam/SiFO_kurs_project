@@ -1,0 +1,176 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 336 272)
+	(text "thirdBlock_release" (rect 5 0 110 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "commandInput[3..0]" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "commandInput[3..0]" (rect 21 27 130 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "operand[15..0]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "operand[15..0]" (rect 21 43 103 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "RegisterAddress[3..0]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "RegisterAddress[3..0]" (rect 21 59 146 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "RamAddress[7..0]" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "RamAddress[7..0]" (rect 21 75 123 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "HighPartAddress[5..0]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "HighPartAddress[5..0]" (rect 21 91 146 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 107 36 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "secondBlockReady" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "secondBlockReady" (rect 21 123 130 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "registerPermit" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "registerPermit" (rect 21 139 98 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "ramPermit" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "ramPermit" (rect 21 155 76 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 320 32)
+		(output)
+		(text "dataOut[15..0]" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "dataOut[15..0]" (rect 219 27 299 41)(font "Arial" (font_size 8)))
+		(line (pt 320 32)(pt 304 32)(line_width 3))
+	)
+	(port
+		(pt 320 48)
+		(output)
+		(text "regesterAdressOut[3..0]" (rect 0 0 139 14)(font "Arial" (font_size 8)))
+		(text "regesterAdressOut[3..0]" (rect 160 43 299 57)(font "Arial" (font_size 8)))
+		(line (pt 320 48)(pt 304 48)(line_width 3))
+	)
+	(port
+		(pt 320 64)
+		(output)
+		(text "ramAddressOut[13..0]" (rect 0 0 126 14)(font "Arial" (font_size 8)))
+		(text "ramAddressOut[13..0]" (rect 173 59 299 73)(font "Arial" (font_size 8)))
+		(line (pt 320 64)(pt 304 64)(line_width 3))
+	)
+	(port
+		(pt 320 80)
+		(output)
+		(text "SetAddress" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "SetAddress" (rect 231 75 299 89)(font "Arial" (font_size 8)))
+		(line (pt 320 80)(pt 304 80)(line_width 1))
+	)
+	(port
+		(pt 320 96)
+		(output)
+		(text "RamRequest" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "RamRequest" (rect 228 91 299 105)(font "Arial" (font_size 8)))
+		(line (pt 320 96)(pt 304 96)(line_width 1))
+	)
+	(port
+		(pt 320 112)
+		(output)
+		(text "MemWrite" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "MemWrite" (rect 244 107 299 121)(font "Arial" (font_size 8)))
+		(line (pt 320 112)(pt 304 112)(line_width 1))
+	)
+	(port
+		(pt 320 128)
+		(output)
+		(text "ramBusy" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "ramBusy" (rect 249 123 299 137)(font "Arial" (font_size 8)))
+		(line (pt 320 128)(pt 304 128)(line_width 1))
+	)
+	(port
+		(pt 320 144)
+		(output)
+		(text "registerRequest" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "registerRequest" (rect 209 139 299 153)(font "Arial" (font_size 8)))
+		(line (pt 320 144)(pt 304 144)(line_width 1))
+	)
+	(port
+		(pt 320 160)
+		(output)
+		(text "GlobalHalt" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "GlobalHalt" (rect 243 155 299 169)(font "Arial" (font_size 8)))
+		(line (pt 320 160)(pt 304 160)(line_width 1))
+	)
+	(port
+		(pt 320 176)
+		(output)
+		(text "RegisterWrite" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "RegisterWrite" (rect 223 171 299 185)(font "Arial" (font_size 8)))
+		(line (pt 320 176)(pt 304 176)(line_width 1))
+	)
+	(port
+		(pt 320 192)
+		(output)
+		(text "registerBusy" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "registerBusy" (rect 226 187 299 201)(font "Arial" (font_size 8)))
+		(line (pt 320 192)(pt 304 192)(line_width 1))
+	)
+	(port
+		(pt 320 208)
+		(output)
+		(text "ThirdBlockGetsTheData" (rect 0 0 133 14)(font "Arial" (font_size 8)))
+		(text "ThirdBlockGetsTheData" (rect 166 203 299 217)(font "Arial" (font_size 8)))
+		(line (pt 320 208)(pt 304 208)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 304 240)(line_width 1))
+	)
+)
