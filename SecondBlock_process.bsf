@@ -1,0 +1,253 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 416 368)
+	(text "SecondBlock_process" (rect 5 0 133 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 336 25 348)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "command[3..0]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "command[3..0]" (rect 21 27 103 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "operand1[15..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "operand1[15..0]" (rect 21 43 110 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "operand2[15..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "operand2[15..0]" (rect 21 59 110 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Stack_input[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "Stack_input[15..0]" (rect 21 75 122 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 91 36 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "dataGetBlockReady" (rect 0 0 112 14)(font "Arial" (font_size 8)))
+		(text "dataGetBlockReady" (rect 21 107 133 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 123 50 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "ALU_flag" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "ALU_flag" (rect 21 139 74 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "OutputBlockGetTheData" (rect 0 0 135 14)(font "Arial" (font_size 8)))
+		(text "OutputBlockGetTheData" (rect 21 155 156 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "ALU_input[15..0]" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "ALU_input[15..0]" (rect 21 171 115 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "globalHalt" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "globalHalt" (rect 21 187 75 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "resultRamAddress[7..0]" (rect 0 0 134 14)(font "Arial" (font_size 8)))
+		(text "resultRamAddress[7..0]" (rect 21 203 155 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "resultregisterAddress[3..0]" (rect 0 0 153 14)(font "Arial" (font_size 8)))
+		(text "resultregisterAddress[3..0]" (rect 21 219 174 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "HighAddressPart[5..0]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "HighAddressPart[5..0]" (rect 21 235 146 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 400 32)
+		(output)
+		(text "dataProcessBlockReady" (rect 0 0 139 14)(font "Arial" (font_size 8)))
+		(text "dataProcessBlockReady" (rect 240 27 379 41)(font "Arial" (font_size 8)))
+		(line (pt 400 32)(pt 384 32)(line_width 1))
+	)
+	(port
+		(pt 400 48)
+		(output)
+		(text "commandOutput[3..0]" (rect 0 0 120 14)(font "Arial" (font_size 8)))
+		(text "commandOutput[3..0]" (rect 259 43 379 57)(font "Arial" (font_size 8)))
+		(line (pt 400 48)(pt 384 48)(line_width 3))
+	)
+	(port
+		(pt 400 64)
+		(output)
+		(text "operand[15..0]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "operand[15..0]" (rect 297 59 379 73)(font "Arial" (font_size 8)))
+		(line (pt 400 64)(pt 384 64)(line_width 3))
+	)
+	(port
+		(pt 400 80)
+		(output)
+		(text "Stack_output[15..0]" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Stack_output[15..0]" (rect 270 75 379 89)(font "Arial" (font_size 8)))
+		(line (pt 400 80)(pt 384 80)(line_width 3))
+	)
+	(port
+		(pt 400 96)
+		(output)
+		(text "Stack_Push" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Stack_Push" (rect 312 91 379 105)(font "Arial" (font_size 8)))
+		(line (pt 400 96)(pt 384 96)(line_width 1))
+	)
+	(port
+		(pt 400 112)
+		(output)
+		(text "Stack_Pop" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "Stack_Pop" (rect 319 107 379 121)(font "Arial" (font_size 8)))
+		(line (pt 400 112)(pt 384 112)(line_width 1))
+	)
+	(port
+		(pt 400 128)
+		(output)
+		(text "GetDataFromFristBlock" (rect 0 0 129 14)(font "Arial" (font_size 8)))
+		(text "GetDataFromFristBlock" (rect 250 123 379 137)(font "Arial" (font_size 8)))
+		(line (pt 400 128)(pt 384 128)(line_width 1))
+	)
+	(port
+		(pt 400 144)
+		(output)
+		(text "ALU_output[15..0]" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "ALU_output[15..0]" (rect 277 139 379 153)(font "Arial" (font_size 8)))
+		(line (pt 400 144)(pt 384 144)(line_width 3))
+	)
+	(port
+		(pt 400 160)
+		(output)
+		(text "AluLoadFirst" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "AluLoadFirst" (rect 308 155 379 169)(font "Arial" (font_size 8)))
+		(line (pt 400 160)(pt 384 160)(line_width 1))
+	)
+	(port
+		(pt 400 176)
+		(output)
+		(text "OverflowFlag" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "OverflowFlag" (rect 302 171 379 185)(font "Arial" (font_size 8)))
+		(line (pt 400 176)(pt 384 176)(line_width 1))
+	)
+	(port
+		(pt 400 192)
+		(output)
+		(text "AluLoadSecond" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "AluLoadSecond" (rect 289 187 379 201)(font "Arial" (font_size 8)))
+		(line (pt 400 192)(pt 384 192)(line_width 1))
+	)
+	(port
+		(pt 400 208)
+		(output)
+		(text "AluGetXNOR" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "AluGetXNOR" (rect 306 203 379 217)(font "Arial" (font_size 8)))
+		(line (pt 400 208)(pt 384 208)(line_width 1))
+	)
+	(port
+		(pt 400 224)
+		(output)
+		(text "AluGetOr" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "AluGetOr" (rect 326 219 379 233)(font "Arial" (font_size 8)))
+		(line (pt 400 224)(pt 384 224)(line_width 1))
+	)
+	(port
+		(pt 400 240)
+		(output)
+		(text "AluGetRol" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "AluGetRol" (rect 323 235 379 249)(font "Arial" (font_size 8)))
+		(line (pt 400 240)(pt 384 240)(line_width 1))
+	)
+	(port
+		(pt 400 256)
+		(output)
+		(text "AluGetSub" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "AluGetSub" (rect 318 251 379 265)(font "Arial" (font_size 8)))
+		(line (pt 400 256)(pt 384 256)(line_width 1))
+	)
+	(port
+		(pt 400 272)
+		(output)
+		(text "resultRamAddressOutput[7..0]" (rect 0 0 172 14)(font "Arial" (font_size 8)))
+		(text "resultRamAddressOutput[7..0]" (rect 207 267 379 281)(font "Arial" (font_size 8)))
+		(line (pt 400 272)(pt 384 272)(line_width 3))
+	)
+	(port
+		(pt 400 288)
+		(output)
+		(text "resultRegisterAddressOutput[3..0]" (rect 0 0 194 14)(font "Arial" (font_size 8)))
+		(text "resultRegisterAddressOutput[3..0]" (rect 185 283 379 297)(font "Arial" (font_size 8)))
+		(line (pt 400 288)(pt 384 288)(line_width 3))
+	)
+	(port
+		(pt 400 304)
+		(output)
+		(text "HighAdressPartOutput[5..0]" (rect 0 0 155 14)(font "Arial" (font_size 8)))
+		(text "HighAdressPartOutput[5..0]" (rect 224 299 379 313)(font "Arial" (font_size 8)))
+		(line (pt 400 304)(pt 384 304)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 384 336)(line_width 1))
+	)
+)

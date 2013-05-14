@@ -87,6 +87,20 @@ applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160)(line_width 1))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "MemReady" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "MemReady" (rect 21 171 83 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "OverflowFlag" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "OverflowFlag" (rect 21 187 98 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
 		(pt 320 32)
 		(output)
 		(text "dataOut[15..0]" (rect 0 0 80 14)(font "Arial" (font_size 8)))
