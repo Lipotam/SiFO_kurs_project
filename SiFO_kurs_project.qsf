@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY thirdBlock_release
+set_global_assignment -name TOP_LEVEL_ENTITY FirstBlock_GetData
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:18:43  FEBRUARY 06, 2013"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -46,11 +46,13 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name FMAX_REQUIREMENT "50 MHz" -section_id CLK_kurs
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE DataGetBlock.vwf
 set_global_assignment -name HEX_FILE RamKurs.hex
 set_global_assignment -name HEX_FILE RomKurs.hex
 set_global_assignment -name QIP_FILE lpm_decode0.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE Memblock.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf
+set_global_assignment -name BDF_FILE 16to8.bdf
 set_global_assignment -name BDF_FILE MemUnit.bdf
 set_global_assignment -name BDF_FILE reg6.bdf
 set_global_assignment -name BDF_FILE reg8.bdf
@@ -100,8 +102,8 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE WriteBlock.vwf
 set_global_assignment -name BDF_FILE ClkController.bdf
 set_global_assignment -name BDF_FILE thirdBlock_release.bdf
 set_global_assignment -name BDF_FILE MainBoard.bdf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE DataProcessBlock.vwf
 set_global_assignment -name BDF_FILE SecondBlock_process.bdf
+set_global_assignment -name BDF_FILE FirstBlock_GetData.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"

@@ -1,0 +1,218 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 408 336)
+	(text "FirstBlock_GetData" (rect 5 0 113 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RegisterPermition" (rect 0 0 97 14)(font "Arial" (font_size 8)))
+		(text "RegisterPermition" (rect 21 27 118 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RegisterDataIn[15..0]" (rect 0 0 118 14)(font "Arial" (font_size 8)))
+		(text "RegisterDataIn[15..0]" (rect 21 43 139 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "MemoryDataInput[15..0]" (rect 0 0 133 14)(font "Arial" (font_size 8)))
+		(text "MemoryDataInput[15..0]" (rect 21 59 154 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "MemoryReady" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "MemoryReady" (rect 21 75 102 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "MemoryPermition" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "MemoryPermition" (rect 21 91 116 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "ProccessBlockReady" (rect 0 0 121 14)(font "Arial" (font_size 8)))
+		(text "ProccessBlockReady" (rect 21 107 142 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "SetLowAddressFromThirdBlock" (rect 0 0 181 14)(font "Arial" (font_size 8)))
+		(text "SetLowAddressFromThirdBlock" (rect 21 123 202 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "LowAddressFromThirdBlock[7..0]" (rect 0 0 191 14)(font "Arial" (font_size 8)))
+		(text "LowAddressFromThirdBlock[7..0]" (rect 21 139 212 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "GlobalHalt" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "GlobalHalt" (rect 21 155 77 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "Clk" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Clk" (rect 21 171 37 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 392 32)
+		(output)
+		(text "RegisterRequest" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "RegisterRequest" (rect 277 27 371 41)(font "Arial" (font_size 8)))
+		(line (pt 392 32)(pt 376 32)(line_width 1))
+	)
+	(port
+		(pt 392 48)
+		(output)
+		(text "RegisterBusy" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "RegisterBusy" (rect 295 43 371 57)(font "Arial" (font_size 8)))
+		(line (pt 392 48)(pt 376 48)(line_width 1))
+	)
+	(port
+		(pt 392 64)
+		(output)
+		(text "RegisterAddres[3..0]" (rect 0 0 118 14)(font "Arial" (font_size 8)))
+		(text "RegisterAddres[3..0]" (rect 253 59 371 73)(font "Arial" (font_size 8)))
+		(line (pt 392 64)(pt 376 64)(line_width 3))
+	)
+	(port
+		(pt 392 80)
+		(output)
+		(text "operand1[15..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "operand1[15..0]" (rect 282 75 371 89)(font "Arial" (font_size 8)))
+		(line (pt 392 80)(pt 376 80)(line_width 3))
+	)
+	(port
+		(pt 392 96)
+		(output)
+		(text "RegisterReadSignal" (rect 0 0 110 14)(font "Arial" (font_size 8)))
+		(text "RegisterReadSignal" (rect 261 91 371 105)(font "Arial" (font_size 8)))
+		(line (pt 392 96)(pt 376 96)(line_width 1))
+	)
+	(port
+		(pt 392 112)
+		(output)
+		(text "operand2[15..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "operand2[15..0]" (rect 282 107 371 121)(font "Arial" (font_size 8)))
+		(line (pt 392 112)(pt 376 112)(line_width 3))
+	)
+	(port
+		(pt 392 128)
+		(output)
+		(text "ResultRamAddress[7..0]" (rect 0 0 138 14)(font "Arial" (font_size 8)))
+		(text "ResultRamAddress[7..0]" (rect 233 123 371 137)(font "Arial" (font_size 8)))
+		(line (pt 392 128)(pt 376 128)(line_width 3))
+	)
+	(port
+		(pt 392 144)
+		(output)
+		(text "CommandOutput[3..0]" (rect 0 0 121 14)(font "Arial" (font_size 8)))
+		(text "CommandOutput[3..0]" (rect 250 139 371 153)(font "Arial" (font_size 8)))
+		(line (pt 392 144)(pt 376 144)(line_width 3))
+	)
+	(port
+		(pt 392 160)
+		(output)
+		(text "ResultRegAddress[3..0]" (rect 0 0 135 14)(font "Arial" (font_size 8)))
+		(text "ResultRegAddress[3..0]" (rect 236 155 371 169)(font "Arial" (font_size 8)))
+		(line (pt 392 160)(pt 376 160)(line_width 3))
+	)
+	(port
+		(pt 392 176)
+		(output)
+		(text "ReadRequest" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "ReadRequest" (rect 295 171 371 185)(font "Arial" (font_size 8)))
+		(line (pt 392 176)(pt 376 176)(line_width 1))
+	)
+	(port
+		(pt 392 192)
+		(output)
+		(text "MemAddr[13..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "MemAddr[13..0]" (rect 282 187 371 201)(font "Arial" (font_size 8)))
+		(line (pt 392 192)(pt 376 192)(line_width 3))
+	)
+	(port
+		(pt 392 208)
+		(output)
+		(text "CommandContainer[15..0]" (rect 0 0 145 14)(font "Arial" (font_size 8)))
+		(text "CommandContainer[15..0]" (rect 226 203 371 217)(font "Arial" (font_size 8)))
+		(line (pt 392 208)(pt 376 208)(line_width 3))
+	)
+	(port
+		(pt 392 224)
+		(output)
+		(text "Memread" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "Memread" (rect 320 219 371 233)(font "Arial" (font_size 8)))
+		(line (pt 392 224)(pt 376 224)(line_width 1))
+	)
+	(port
+		(pt 392 240)
+		(output)
+		(text "DataGetBlockReady" (rect 0 0 113 14)(font "Arial" (font_size 8)))
+		(text "DataGetBlockReady" (rect 258 235 371 249)(font "Arial" (font_size 8)))
+		(line (pt 392 240)(pt 376 240)(line_width 1))
+	)
+	(port
+		(pt 392 256)
+		(output)
+		(text "HighAddressPart[5..0]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "HighAddressPart[5..0]" (rect 246 251 371 265)(font "Arial" (font_size 8)))
+		(line (pt 392 256)(pt 376 256)(line_width 3))
+	)
+	(port
+		(pt 392 272)
+		(output)
+		(text "RamBusy" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "RamBusy" (rect 317 267 371 281)(font "Arial" (font_size 8)))
+		(line (pt 392 272)(pt 376 272)(line_width 1))
+	)
+	(port
+		(pt 392 288)
+		(output)
+		(text "RamRequest" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "RamRequest" (rect 300 283 371 297)(font "Arial" (font_size 8)))
+		(line (pt 392 288)(pt 376 288)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 376 304)(line_width 1))
+	)
+)
